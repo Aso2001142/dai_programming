@@ -24,12 +24,15 @@ except ZeroDivisionError as e:
 finally:
     print(2)
     
+#複数例外
 #未定義変数
 print(1)
 try:
-    number = 1
+    number = 0
     answer = 100 / number
     print(answer2)
+except ZeroDivisionError as e:
+    print("0では割り算できません")
 except NameError as e:
     print("未定義の変数を呼び出しています")
     print(e)
