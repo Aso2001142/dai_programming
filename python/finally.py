@@ -1,4 +1,5 @@
 # finally
+# 例外が発生した場合もしなかった場合も常に最後に行う処理をfinally節に指定できる。
 def test_exception(number):
     print(2)
     try:
