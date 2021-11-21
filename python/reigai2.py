@@ -12,6 +12,7 @@ finally:
     print(4)
 
 # 例外は伝わる 
+# 例外が発生した場合、呼び出し元へその例外が伝わる
 def test_exception(number):
     print(2)
     try:
@@ -26,7 +27,7 @@ def test_exception(number):
 
 print(1)
 try:
-    answer = test_exception(0)
+    answer = test_exception(0)  # 呼び出し元
     print(7)
 except ZeroDivisionError as e:
     print(8)
